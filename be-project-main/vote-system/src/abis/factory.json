@@ -1,0 +1,82 @@
+{
+  "address": "0xaa34e8119cf88f1a4358d475216981d0297d6c0f",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "eventName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "eventManager",
+          "type": "string"
+        }
+      ],
+      "name": "createVoting",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "deployedVotings",
+      "outputs": [
+        {
+          "internalType": "contract BlockchainVoting",
+          "name": "votingContract",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "eventName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "eventManager",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getDeployedVotings",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "contract BlockchainVoting",
+              "name": "votingContract",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "eventName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "eventManager",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct VotingFactory.VotingInfo[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
